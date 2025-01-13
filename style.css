@@ -1,12 +1,12 @@
 *{
   margin: 0;
-  padding: 0;
+  
 }
 
 .header{
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(13, 24, 67, 0.7),rgba(11, 22, 65, 0.7)),url(); 
+  background-image: linear-gradient(rgba(34, 33, 33, 0.7),rgba(59, 59, 59, 0.7)),url(images/shaun2.jpg); 
   background-position: center;
   background-size: cover;
   position: relative;
@@ -14,8 +14,7 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: italic;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
 
 nav{
@@ -28,22 +27,24 @@ nav{
 nav img{
   width: 150px;
   border-radius: 80px;
- }
+}
 
 .nav-links{
   flex: 1;
   text-align: right;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
 }
 
 .nav-links ul li{
   list-style: none;
   display: inline-block;
   padding: 8px 12px;
-  position: relative;
-}
+ }
 
 .nav-links ul li a{
-  color: rgb(228, 195, 9);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 20px;
 }
@@ -52,7 +53,7 @@ nav img{
   content: '';
   width: 0%;
   height: 2px;
-  background: rgb(228, 195, 9);
+  background: rgb(255, 255, 255);
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -64,27 +65,31 @@ nav img{
 
 .text-box{
   width: 90%;
-  color: rgb(228, 195, 9);
+  color: rgb(255, 255, 255);
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 20%;
   transform: translate(-50%,-50%);text-align: center;
+  
 }
 
 .text-box h1{
-  font-size: 70px;
+  padding: auto;
+  margin: auto;
+  font-size: 50px;
 }
 
 .text-box p{
-  margin: 10px 0 40px;
-  font-size: 22px;
-  color: rgb(228, 195, 9);
+  margin: auto;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
 }
 
+
 .See-More:hover{
-  border: 1px solid rgb(61, 52, 5);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 40px;
-  background: rgb(61, 52, 5);
+  background: rgb(255, 255, 255);
   transition: 0.6s ease-in-out;
 }
 
@@ -97,7 +102,7 @@ nav img{
     }
     .nav-links{
       position: absolute;
-      background: rgb(228, 195, 9);
+      background: rgb(252, 252, 252);
       height: 100vh;
       width: 200px;
       top: 0;
@@ -108,7 +113,7 @@ nav img{
 
     nav .fa{
       display: block;
-      color: gold;
+      color: rgb(255, 255, 255);
       margin: 10px;
       font-size: 22px;
       cursor: pointer;
@@ -119,73 +124,24 @@ nav img{
 
 }
 
-/*-- sessions --*/
+ /*-- about me --*/
 
-.sessions{
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 100px;
-}
-
-h1{
-  font-size: 36px;
-  font-weight: 600;
-}
-
-.sessions p{
-  color: rgb(168, 173, 21);
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 20px;
-  padding: 10px;
- }
-
-.row{
-  margin-top: 5%;
-  display: flex;
-  justify-content: space-between;
-}
- 
-.session-col{
-  flex-basis: 31%;
-  background: rgb(83, 72, 202);
-  border-radius: 10px;
-  margin-bottom: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
-  transition: 0.6s;
-  cursor: pointer;
-}
-
-h3{
-  text-align: center;
-  font-weight: 600;
-  margin: 10px;
-}
-
-.session-col:hover{
-  box-shadow: 0 0 20px 0px navy;
-}
-
-@media(max-width: 700px){
-  .row{
-    flex-direction: column;
-  }
-}
-
- /*-- coaches --*/
-
-.coaches{
-  width: 80%;
+.about-me{
+  width: 100%;
   margin: auto;
   text-align: center;
   padding-top: 50px;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about-me h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .coaches-col{
   flex-basis: 35%;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
@@ -207,13 +163,13 @@ h3{
 }
 
 .layer:hover{
-  background: rgb(0, 0, 128, 0.5);
+  background: rgba(58, 58, 58, 0.5);
 }
 
 .layer h3{
   width: 100%;
   font-weight: 500;
-  color: gold;
+  color: rgb(253, 253, 253);
   font-size: 25px;
   bottom: 0;
   left: 50%;
@@ -228,74 +184,23 @@ h3{
   opacity: 1;
 }
 
- /*-- Holiday clubs --*/
 
-.holiday{
-  width: 80%;
+ /*-- Project --*/
+
+.projects{
+  width: 100%;
   margin: auto;
   text-align: center;
   padding-top: 50px;
-}
-
-.holiday-col{
-  flex-basis: 35%;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  position: relative;
-  overflow: hidden;
-}
-
-.holiday-col img{
-  width: 100%;
-  display: block;
-}
-
-.layer{
-  background: transparent;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: 0.6s;
-}
-
-.layer:hover{
-  background: rgb(0, 0, 128, 0.5);
-}
-
-.layer h3{
-  width: 100%;
-  font-weight: 500;
-  color: gold;
-  font-size: 25px;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
-  opacity: 0;
-  transition: 0.6s;
-}
-
-.layer:hover h3{
-  bottom: 49%;
-  opacity: 1;
-}
-
- /*-- About us --*/
-
-.about{
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 50px;
+  background: #000000;
+  color: aliceblue;
  }
- .about p{
+
+ .projects p{
   font-size: 25px;
 }
 
-
- .about-col{
+ .projects-col{
   flex-basis: 35%;
   border-radius: 10px;
   margin-bottom: 30px;
@@ -303,50 +208,15 @@ h3{
   overflow: hidden;
 }
 
-.about-col img{
-  width: 100%;
-  display: block;
-}
-
-.layer{
-  background: transparent;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: 0.6s;
-}
-
-.layer:hover{
-  background: rgb(0, 0, 128, 0.5);
-}
-
-.layer h3{
-  width: 100%;
-  font-weight: 500;
-  color: gold;
-  font-size: 25px;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
-  opacity: 0;
-  transition: 0.6s;
-}
-
-.layer:hover h3{
-  bottom: 49%;
-  opacity: 1;
-}
 
 
- /*-- Contact us --*/
 
-.contact-us{
+ /*-- Contact me --*/
+
+.contact{
   margin: 100px auto;
-  width: 80%;
-  background-image:linear-gradient(rgba(21, 37, 101, 0.7),rgba(22, 37, 100, 0.7)),url(/Users/test/Desktop/images/20241214_110910.jpg);
+  width: 100%;
+  background-image:linear-gradient(rgba(1, 1, 1, 0.7),rgba(0, 0, 0, 0.7)),url(/Users/test/Desktop/images/20241214_110910.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -354,10 +224,15 @@ h3{
   padding: 200px 0;
 }
 
-.contact-us h1{
-  color: rgb(184, 159, 18);
-  margin-bottom: 40px;
+.contact h1{
+  color: rgb(0, 0, 0);
+  margin-bottom: 30px;
   padding: 0;
+}
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media(max-width: 700px){
@@ -369,10 +244,14 @@ h3{
 /*-- footer --*/
 
 .footer{
+  margin: 0;
   width: 100%;
   text-align: center;
   padding: 30px 0;
   font-size: 30px;
+  background: #000000;
+  color: aliceblue;
+
 }
 
 .footer h1{
@@ -382,12 +261,11 @@ h3{
  
 }
 
-
-
 .card-continer{
   width: 300px;
   height: 200px;
   perspective: 1000px;
+
 }
 .card{
   width: 100%;
@@ -409,14 +287,17 @@ h3{
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(195, 183, 183, 0.2);
-  color: rgb(255, 255, 255);
-  font-size: 25px;
+  box-shadow: 0 4px 8px rgba(198, 198, 198, 0.2);
+  color: rgb(174, 173, 173);
+  font-size: 30px;
 }
 .card-front{
-  background: #ffffff;
+  background: #000000;
 }
 .card-back{
-  background: #ffffff;
+  background: #000000;
   transform: rotateY(180deg);
 }
+
+
+
