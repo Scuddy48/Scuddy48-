@@ -2,6 +2,13 @@
   margin: 0;
   padding: 0;
 }
+
+body{
+  margin: 0;
+}
+
+
+
 .header{
   min-height: 100vh;
   width: 100%;
@@ -13,7 +20,12 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: italic;
-  font-variation-settings: "wdth" 100;
+  font-variation-settings:"wdth" ;
+}
+@media(max-width: 500){
+  .header {
+    font-size: 20px;
+  }
 }
 
 nav{
@@ -21,11 +33,6 @@ nav{
   padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
-}
-
-nav img{
-  width: 150px;
-  border-radius: 80px;
 }
 
 .nav-links{
@@ -73,17 +80,21 @@ nav img{
 }
 
 .text-box h1{
-  padding: auto;
-  margin: auto;
+  margin-left: 150px;
   font-size: 50px;
   text-shadow: 3px 5px gray;
 }
 
 .text-box p{
-  margin: auto;
+  margin-left: 150px;
   font-size: 15px;
   color: rgb(255, 255, 255);
 }
+@media(max-width: 500){
+  .text-box {
+    font-size: 20px;
+  }
+
 
 
 .See-More:hover{
@@ -93,10 +104,6 @@ nav img{
   transition: 0.6s ease-in-out;
 }
 
-@media(max-width: 700){
-  .text-box h1{
-    font-size: 20px;
-  }
     .nav-links ul li{
       display: block;
     }
@@ -121,9 +128,7 @@ nav img{
     .nav-links ul{
       padding: 30px;
     }
-
-}
-
+  }
  /*-- about me --*/
 
 .about-me{
@@ -182,6 +187,12 @@ nav img{
 .layer:hover h3{
   bottom: 49%;
   opacity: 1;
+}
+
+@media(max-width: 700px){
+  .row{
+    flex-direction: column;
+  }
 }
 
 
@@ -297,6 +308,3 @@ nav img{
   background: rgb(255, 255, 255);
   transform: rotateY(180deg);
 }
-
-
-
